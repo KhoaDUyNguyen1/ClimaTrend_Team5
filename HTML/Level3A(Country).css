@@ -9,58 +9,58 @@ html {
 
 .container {
     width: 100%;
-    min-height: 100vh;
+    height: 1024px;
     position: relative;
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 
 .header {
-    height: 87px;
     width: 100%;
+    height: 87px;
     position: fixed;
     top: 0;
     left: 0;
     border-bottom: 1px solid black;
-    z-index: 1000;
-    background: white;
-    padding: 10px 0;
-    box-sizing: border-box;
-    height: 80px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 0 20px; 
+    
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+    position: absolute;
+    left: 25px;
+    top: 19px;
+    width: 48px;
+    height: 48px;
 }
 
 .logo-icon {
     width: 44px;
     height: 40px;
-    display: inline-block;
+    left: 1.99px;
+    top: 4px;
+    position: absolute;
     border: 4px #1E1E1E solid;
 }
 
 .logo-text {
+    position: absolute;
+    left: 81px;
+    top: 24px;
     color: black;
     font-size: 32px;
     font-weight: 700;
-    margin-left: -270px;
-}
-.nax-item{
-    display: flex;
-    gap: 20px;
 }
 
 .nav-item {
+    position: absolute;
+    top: 29px;
     font-size: 24px;
     font-weight: 200;
     text-decoration: none;
     color: black;
-    margin-right: 20px;
 }
 
 
@@ -314,21 +314,4 @@ tr:last-child td {
 
 .row-border:nth-child(13) {
     top: 528px;
-}
-@media (max-width: 1200px) {
-    .header {
-        text-align: center;
-        flex-direction: column; /* Stack elements vertically */
-        height: auto;
-    }
-
-    .nav {
-        margin-top: 10px;
-        gap: 10px; /* Adjust spacing between nav items */
-    }
-
-    .nav-item {
-        display: inline-block;
-        margin: 5px 10px;
-    }
 }
