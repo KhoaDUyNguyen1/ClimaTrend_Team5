@@ -94,10 +94,14 @@ html {
     position: absolute;
     background: #C8E9C6;
     border-radius: 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
 }
 
 .search-section {
-    position: absolute;
+ transform: translateY(44px);
 }
 
 .search-title {
@@ -105,13 +109,14 @@ html {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 10px;
+    text-align:center;
 }
 
 .select-wrapper {
     position: relative;
 }
 .select-boxforcity{
-    width: 253px;
+    width: 213px;
     height: 31px;
     background: #D9D9D9;
     border-radius: 8px;
@@ -120,9 +125,19 @@ html {
     padding: 0 10px;
     appearance: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
 }
-.select-boxforcountry{
-    width: 235px;
+
+input[type="checkbox"]{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.select-boxforglobal{
+    width: 255px;
     height: 31px;
     background: #D9D9D9;
     border-radius: 8px;
@@ -136,7 +151,7 @@ html {
 
 
 .select-box {
-    width: 171px;
+    width: 250px;
     height: 31px;
     background: #D9D9D9;
     border-radius: 8px;
@@ -146,6 +161,20 @@ html {
     appearance: none;
     cursor: pointer;
 }
+
+#period{
+    width: 200px;
+    height: 31px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 22px;
+    padding: 0 10px;
+    appearance: none;
+    cursor: pointer;
+
+}
+
 
 .select-arrow {
     position: absolute;
@@ -195,29 +224,13 @@ html {
     top: 37px;
 }
 
-.search-section:nth-child(4) {
-    left: 805px;
-    top: 38px;
-}
 
-.search-section:nth-child(5) {
-    left: 1009px;
-    top: 38px;
-}
 
-.search-section:nth-child(6) {
-    left: 1204px;
-    top: 38px;
-}
 
-.search-section:nth-child(2) .select-box {
-    width: 223px;
-}
 
-.search-section:nth-child(5) .select-box,
-.search-section:nth-child(6) .select-box {
-    width: 134px;
-}
+
+
+
 
 .search-button {
     width: 194px;
